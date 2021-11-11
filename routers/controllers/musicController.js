@@ -23,6 +23,6 @@ const getMusicById = async (req, res) => {
 };
 
 module.exports = {
-    getAllMusic,
+  getAllMusic,
   getMusicById,
 };

@@ -10,7 +10,7 @@ const movieRouter = require("./routers/routes/moviesRoute");
 
 const musicRouter = require("./routers/routes/musicRoute");
 
-
+const podcastRouter = require("./routers/routes/podcastRoute");
 
 const app = express();
 
@@ -25,18 +25,10 @@ app.use(cors());
 
 app.use(morgan("dev"));
 
-// router level middleware
-// const movieMiddleware = (req, res, next) => {
-//   console.log("movies");
-//   next();
-// };
-
-//third party middleware
-
 //routers level middleware
 app.use("/movies", movieRouter);
 app.use("/music", musicRouter);
-
+app.use("/podcast", podcastRouter);
 
 const PORT = process.env.PORT || 4000;
 
