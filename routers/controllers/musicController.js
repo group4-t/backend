@@ -1,10 +1,10 @@
 const fs = require("fs");
 const axios = require("axios");
 
-const getAllMovies = async (req, res) => {
+const getAllMusic = async (req, res) => {
   try {
     const result = await axios.get(
-      `https://itunes.apple.com/search?term=movies`
+      `https://itunes.apple.com/search?term=music`
     );
     res.status(200).json(result.data.results);
   } catch (error) {
@@ -12,7 +12,7 @@ const getAllMovies = async (req, res) => {
   }
 };
 
-const getMovieById = async (req, res) => {
+const getMusicById = async (req, res) => {
   const id = req.params.id;
   try {
     const result = await axios.get(`https://itunes.apple.com/lookup?id=${id}`);
@@ -23,6 +23,6 @@ const getMovieById = async (req, res) => {
 };
 
 module.exports = {
-  getAllMovies,
-  getMovieById,
+    getAllMusic,
+  getMusicById,
 };

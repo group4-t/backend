@@ -8,6 +8,10 @@ dotenv.config();
 // router
 const movieRouter = require("./routers/routes/moviesRoute");
 
+const musicRouter = require("./routers/routes/musicRoute");
+
+
+
 const app = express();
 
 //app level middleware
@@ -31,9 +35,11 @@ app.use(morgan("dev"));
 
 //routers level middleware
 app.use("/movies", movieRouter);
+app.use("/music", musicRouter);
+
 
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
-  console.log(`Server on ${PORT}`);
+  console.log(`Server running on ${PORT}`);
 });
