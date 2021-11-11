@@ -12,6 +12,8 @@ const musicRouter = require("./routers/routes/musicRoute");
 
 const podcastRouter = require("./routers/routes/podcastRoute");
 
+const ebookRouter = require("./routers/routes/ebookRoute");
+
 const app = express();
 
 //app level middleware
@@ -29,6 +31,7 @@ app.use(morgan("dev"));
 app.use("/movies", movieRouter);
 app.use("/music", musicRouter);
 app.use("/podcast", podcastRouter);
+app.use("/ebook", ebookRouter);
 
 const PORT = process.env.PORT || 4000;
 
