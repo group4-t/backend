@@ -17,7 +17,7 @@ const search = (req, res) => {
     .search(
       term,
       {
-        limit: 50, // max 200
+        limit: 50, // maxx 200
       },
       function (err, res) {
         if (err) {
