@@ -35,6 +35,7 @@ const allRouter = require("./routers/routes/allRoute");
 const usersRouter = require("./routers/routes/usersRoute");
 
 const app = express();
+app.use(cors());
 
 //app level middleware
 app.use(express.json());
@@ -43,7 +44,6 @@ const appMiddleware = (req, res, next) => {
   next();
 };
 app.use(appMiddleware);
-app.use(cors());
 
 app.use(morgan("dev"));
 
