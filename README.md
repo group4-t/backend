@@ -11,13 +11,20 @@ This sample backend interacts directly with iTunes API, specifically for the pur
 (https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html).
 
 ## Running the server
+
 If you wish to run the server, the first step is installing express .
 Once that's out of the way, open a terminal and run the following command:
 `npm i express` 
+
 ---
+
+
 that will allow installing the project's dependencies. Still in the terminal, navigate to the project's directory and installing:
 `npm i nodemon`
+
 ---
+
+
 The server is now ready to run. Simply point a terminal to the project's folder and run:
 `npm run dev`
 
