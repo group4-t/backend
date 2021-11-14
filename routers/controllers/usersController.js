@@ -37,6 +37,7 @@ const addToUserFav = (req, res) => {
   };
   const theUser = users.filter((ele) => {
     return ele.id == input.id;
+
   });
   console.log(theUser);
   theUser[0].Fav.push({ trackId: input.trackId });
