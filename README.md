@@ -6,7 +6,7 @@ The server logs all API requests it performs to the terminal, so you can see wha
 
 ## Integration with the iTunes API
 
-This sample backend interacts directly with iTunes API, specifically for the purpose of authorizing and capturing orders. You can read more about the API [here](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html).
+This sample backend interacts directly with iTunes API, specifically for the purpose of authorizing and capturing orders. You can read more about the API [here](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/).
 
 This project serves as a very slim backend designed to work with iTunes This server receives requests issued by the sample applications, and forwards these requests to Klarna. 
 The server logs all API requests it performs to the terminal, so you can see what's going on even without diving into the code.
