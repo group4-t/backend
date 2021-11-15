@@ -1,7 +1,7 @@
 # SkyTunes Backend
 
 
-This project serves as a very slim backend designed to work with iTunes This server receives requests issued by the sample applications, and forwards these requests to Klarna.
+This project serves as a very slim backend designed to work with iTunes This server receives requests issued by the sample applications.
 The server logs all API requests it performs to the terminal, so you can see what's going on even without diving into the code.
 
 ## Integration with the iTunes API
